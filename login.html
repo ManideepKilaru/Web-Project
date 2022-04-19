@@ -1,0 +1,82 @@
+
+<html>
+<head><title>this is login page</title>
+<style type="text/css">
+    td{
+    font-size: 20pt;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    }
+body {
+    background-image: url("s.jpg");
+    background-repeat:norepeat;
+          }
+.id1 {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: wheat;
+  border: none;
+  border-radius: 20px;
+ 
+}
+
+input:hover {background-color: peach}
+
+input:active {
+  background-color: peach;
+ 
+  transform: translateY(4px);
+}
+</style>
+<script>
+function fun()
+{
+	u=f1.t1.value;
+	p=f1.t2.value;
+if(u=="")
+{
+alert("user name should not be empty");
+return false;
+}
+else if(p=="")
+{
+alert("password should not be empty");
+return false;
+}
+else
+return true;
+}
+</script>
+</head>
+<body >
+<form  method="post" name="f1" onSubmit="fun()" action="log.php">
+<h1 align="center" ><ul>USER LOGIN</ul></h1>
+<table border="0" align="center" width="25%">
+<tr>
+<td>username:</td>
+<td><input type="text" name="t1"></td>
+</tr>
+<tr>
+<td>password:</td>
+<td><input type="password" name="t2"></td>
+</tr>
+<tr>
+<td><input type="submit" class="id1"></td>
+<td><input type="reset" class="id1"></td>
+</tr>
+</table>
+<table align="center">
+<tr>
+<td>
+New User:<a href="signup.html" target="_self">signup</a></td></tr>
+<tr><td>
+For hospital Login:<a href="hospitallogin.html">click here</a></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head><title>this is signin page</title>
+<style type="text/css">
+    td{
+       font-size: 20pt;
+       }
+body {
+    background-image: url("l.jpg");
+    background-repeat:norepeat;
+          }
+.id{
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: peach;
+  border: none;
+  border-radius: 20px;
+ 
+}
+
+input:hover {background-color: peach}
+
+input:active {
+  background-color: peach;
+ 
+  transform: translateY(4px);
+}
+</style>
+<script language="javascript">
+function fun1()
+{
+	
+	d1=f2.un.value;
+	e1=f2.p.value;
+
+ if(d1=="")
+{
+alert("username should not be empty");
+return false;
+}
+else if(e1=="")
+{
+alert("password should not be empty");
+return false;
+}
+else if(e1.length<8)
+{
+alert("password should contain 8 characters");
+return false;
+}
+else
+return true;
+}
+</script>
+</head>
+<body >
+<form method="post" name="f2" onSubmit="fun1()" action="hsign.php">
+<h1 align="center"><ul>HOSPITAL SIGN UP</ul></h1>
+<table border=0 align="center">
+<tr>
+<td>
+Email-id:</td>
+<td><input  type="email" name="e"></td></tr>
+<tr>
+<td>
+Username:</td>
+<td><input type="text" name="un"></td></tr>
+<tr>
+<td>
+Password:</td>
+<td><input  type="password" name="p"></td></tr>
+<tr>
+<td>
+<input class="id" type="submit"></td>
+<td><input class="id" type="reset"></td></tr>
+
+</form>
+</body>
+</html>

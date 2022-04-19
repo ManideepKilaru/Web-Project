@@ -1,0 +1,82 @@
+<html>
+<head><title>this is login page</title>
+<style type="text/css">
+    td{
+    font-size: 20pt;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    }
+body {
+    background-image: url("s.jpg");
+    background-repeat:norepeat;
+          }
+.id {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: wheat;
+  border: none;
+  border-radius: 20px;
+ 
+}
+
+input:hover {background-color: peach}
+
+input:active {
+  background-color: peach;
+ 
+  transform: translateY(4px);
+}
+
+</style>
+<script>
+function fun()
+{
+	u=f1.ht.value;
+	p=f1.hp.value;
+if(u=="")
+{
+alert("user name should not be empty");
+return false;
+}
+else if(p=="")
+{
+alert("password should not be empty");
+return false;
+}
+else
+return true;
+}
+</script>
+</head>
+<body >
+<form  method="post" name="f1" onSubmit="fun()" action="hlog.php">
+<h1 align="center"><ul>HOSPITAL LOGIN</ul></h1>
+<table border="0" align="center" width="25%">
+<tr>
+<td>username:</td>
+<td><input type="text" name="ht"></td>
+</tr>
+<tr>
+<td>password:</td>
+<td><input type="password" name="hp"></td>
+</tr>
+<tr>
+<td><input type="submit" class="id"></td>
+<td><input type="reset" class="id"></td>
+</tr>
+</table>
+<table align="center">
+<tr>
+<td>
+New Hospital:<a href="hsignup.html" >clickhere</a></td></tr>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

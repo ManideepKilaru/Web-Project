@@ -1,0 +1,140 @@
+<html>
+<head>
+<script>
+function appoint()
+{
+                 a=a1.p1.value;
+	b=a1.a1.value;
+	c=a1.ph.value;
+	d=a1.d1.value;
+if(a=="")
+{
+alert("patient name should not be empty");
+return false;
+}
+else if(b=="")
+{
+alert("patient age should not be empty");
+return false;
+}
+else if(c=="")
+{
+alert("phonenumber should not be empty");
+return false;
+}
+else if(d=="")
+{
+alert("date should not be empty");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+<style>
+    td{
+       
+    font-size: 20pt;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    }
+.id {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: gray;
+  border: none;
+  border-radius: 20px;
+ 
+}
+
+input:hover {background-color: gray}
+
+input:active {
+  background-color: gray;
+ 
+  transform: translateY(4px);
+}
+
+</style>
+</head>
+<body background="bench.jpg">
+<form method="post" name="a1" onSubmit="appoint()" action="appm.php">
+<h1 align="center">Appointment Form</h1>
+<table align="center">
+<tr>
+<td>Patient Name</td>     
+<td><input type="text" name="p1"></td>
+</tr>
+<tr>
+<td>Email-id</td>
+<td><input type="email" name="mail"></td>
+</tr>
+<tr>
+<td>Age</td>
+<td><input type="text" name="a1"></td>
+</tr>
+<tr>
+<td>Gender</td>   
+<td><input type="radio" name="Gender" value="Male">Male&nbsp;&nbsp;
+<input type="radio" name="Gender" value="Female">Female</td>
+</tr>
+<tr>
+<td>Phone No</td>     
+<td><input type="text" name="ph"></td>
+</tr>
+<tr>
+<td>Date</td>     
+<td><input type="date" name="d1"></td>
+</tr>
+<tr>
+<td>Preferred Time:</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><select name="sel">
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select></td>
+</tr>
+<tr>
+<td>Hospital Location:</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><select name="hll">
+<option>Guntur</option>
+<option>vijayawada</option>
+<option>hyderabad</option>
+</select></td>
+</tr>
+<tr>
+<td>HospitalName:</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><select name="hn">
+<option>kaminenihospitals</option>
+<option>carehospitals</option>
+<option>Rameshhospitals</option>
+</select></td>
+</tr>
+<tr>
+<td>Speciality:</td>&nbsp;&nbsp;&nbsp;&nbsp;
+<td><select name="spl">
+<option>Cardiology</option>
+<option>Dentist</option>
+<option>Diabetes</option>
+<option>ENT</option>
+<option>Gynacology</option>
+<option>Neurology</option>
+<option>Skin Care</option>
+</select></td>
+</tr>
+<tr>
+<td><input class="id" type="submit" name="sub" value="SUBMIT"></td>
+<td>
+<input class="id" type="reset" name="rs" ></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
